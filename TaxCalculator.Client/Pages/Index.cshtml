@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "";
+}
+
+<div class="container col-8">
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Enter your Postal Code and Income below to calculate your tax.</p>
+    </div>
+
+    <div class="text-center">
+        <label id="errorMessage"
+               class="error-label ">
+        </label>
+    </div>
+
+    <div class="text-center border border-light p-5">
+        <select class="form-control mb-3"
+                id="postalCodesDropdown"
+                name="postalCodesDropdown">
+        </select>
+
+        <input type="number"
+               step=".01"          
+               id="income"
+               class="form-control mb-3"
+               placeholder="Enter Income">
+
+        <button id="submit"
+                class="btn btn-info btn-block">
+            Submit
+        </button>
+
+        <label id="taxPayable"
+               class="result-label">
+
+        </label>
+    </div>
+</div>
