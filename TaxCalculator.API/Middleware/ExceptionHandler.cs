@@ -31,7 +31,7 @@ namespace TaxCalculator.RESTAPI.Middleware
 
                         if (baseException is CustomException exception)
                         {
-                            Log.Error("Exception: Username: {Username} Error: {Error} RequestBody: {RequestBody} Claims: {Claims}",
+                            Log.Error("An exception occured",
                             new object[]
                             {
                                 contextFeature.Error.Message,
